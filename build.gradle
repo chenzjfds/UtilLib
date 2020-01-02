@@ -3,20 +3,12 @@
 buildscript {
     ext.kotlin_version = '1.3.50'
     repositories {
-        maven {
-            url '/Users/zhijunchen/android/maven/zhijunchen'
-        }
-        maven { url 'https://www.jitpack.io' }
-        jcenter()
-        mavenCentral()
 
-
-//        maven { url 'http://maven.weoa.com/nexus/content/groups/public/' }
 
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
-
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
@@ -28,12 +20,9 @@ buildscript {
 
 allprojects {
     repositories {
-        maven {
-            url '/Users/zhijunchen/android/maven/zhijunchen'
-        }
+//        maven { url 'https://jitpack.io' }
         maven { url 'https://www.jitpack.io' }
-        jcenter()
-        mavenCentral()
+
 
 
 //        maven { url 'http://maven.weoa.com/nexus/content/groups/public/' }
@@ -41,7 +30,7 @@ allprojects {
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
-
+        mavenCentral()
     }
 }
 
