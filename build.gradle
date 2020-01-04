@@ -27,7 +27,6 @@ allprojects {
         maven { url 'https://www.jitpack.io' }
 
 
-
 //        maven { url 'http://maven.weoa.com/nexus/content/groups/public/' }
 
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
