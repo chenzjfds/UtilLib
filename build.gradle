@@ -41,3 +41,30 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+ext {
+    minSdkVersion = 11
+    compileSdkVersion = 27
+    targetSdkVersion = compileSdkVersion
+
+
+    bintrayRepo = 'tbruyelle'
+    bintrayName = 'RxPermissions2'
+
+    publishedGroupId = 'com.tbruyelle.rxpermissions2'
+    artifact = 'rxpermissions'
+    libraryName = 'UtilLib'
+    libraryVersion = '0.9.5'
+
+    libraryDescription = 'A wrapper for Android 6.0 permissions'
+
+    siteUrl = 'https://github.com/tbruyelle/RxPermissions'
+    gitUrl = 'https://github.com/tbruyelle/RxPermissions.git'
+
+    developerId = 'tbruyelle'
+    developerName = 'Thomas Bruyelle'
+    developerEmail = 'thomas.bruyelle@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
